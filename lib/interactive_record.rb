@@ -60,7 +60,7 @@ class InteractiveRecord
     sql = "SELECT * FROM #{self.table_name} WHERE ? = ?"
    
     #DB[:conn].execute(sql, attribute.keys[0].to_s, attribute[attribute.keys[0]])
-    DB[:conn].execute(sql, 'name', 'Susan')
+    DB[:conn].execute(sql, :name, 'Susan')
 
   end
 
